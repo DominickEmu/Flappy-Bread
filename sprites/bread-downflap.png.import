@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bfygmunjovspu"
-path="res://.godot/imported/redbird-downflap.png-af9cf405df9656ddd4f587a031a2b793.ctex"
+uid="uid://dia53g7wyni6p"
+path="res://.godot/imported/bread-downflap.png-f7c3203cb73836112cb0c5dda2434925.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/redbird-downflap.png"
-dest_files=["res://.godot/imported/redbird-downflap.png-af9cf405df9656ddd4f587a031a2b793.ctex"]
+source_file="res://sprites/bread-downflap.png"
+dest_files=["res://.godot/imported/bread-downflap.png-f7c3203cb73836112cb0c5dda2434925.ctex"]
 
 [params]
 

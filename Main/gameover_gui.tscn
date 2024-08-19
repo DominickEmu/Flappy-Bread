@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://cahe7k7tl7dkm"]
 
-[ext_resource type="Texture2D" uid="uid://b74i1pw6bts1x" path="res://sprites/gameover.png" id="1_lt46y"]
+[ext_resource type="Texture2D" uid="uid://bsd8xlufc4ndo" path="res://sprites/gameover.png" id="1_lt46y"]
 [ext_resource type="FontFile" uid="uid://c4sde6tgym17q" path="res://Font/Video Regular.ttf" id="2_sgj1j"]
 [ext_resource type="FontFile" uid="uid://0ingaipw0rab" path="res://Font/flappy-bird-font.ttf" id="3_iy0cb"]
 

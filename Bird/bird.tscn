@@ -1,9 +1,9 @@
 [gd_scene load_steps=10 format=3 uid="uid://buw16sqeuub2t"]
 
-[ext_resource type="Texture2D" uid="uid://qmxu4andyc18" path="res://sprites/yellowbird-downflap.png" id="1"]
 [ext_resource type="Script" path="res://Bird/bird.gd" id="1_0fvuy"]
-[ext_resource type="Texture2D" uid="uid://drivrwwjs0n6i" path="res://sprites/yellowbird-midflap.png" id="2"]
-[ext_resource type="Texture2D" uid="uid://cbvscru8uvgh6" path="res://sprites/yellowbird-upflap.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://dia53g7wyni6p" path="res://sprites/bread-downflap.png" id="2_b0tjg"]
+[ext_resource type="Texture2D" uid="uid://chkrqy0paqi4s" path="res://sprites/bread-midflap.png" id="3_wxijt"]
+[ext_resource type="Texture2D" uid="uid://dphd5syx0l7j8" path="res://sprites/bread-upflap.png" id="4_5fhm7"]
 [ext_resource type="AudioStream" uid="uid://othwegl5d1o3" path="res://audio/wing.wav" id="5_awv18"]
 [ext_resource type="AudioStream" uid="uid://kgb63er2oyqg" path="res://audio/hit.wav" id="6_7x1eu"]
 [ext_resource type="AudioStream" uid="uid://crgl2ek2qtmb8" path="res://audio/thud.wav" id="7_yb0e2"]
@@ -12,24 +12,21 @@
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1")
+"texture": ExtResource("2_b0tjg")
 }, {
 "duration": 1.0,
-"texture": ExtResource("2")
+"texture": ExtResource("3_wxijt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3")
-}, {
-"duration": 1.0,
-"texture": ExtResource("2")
+"texture": ExtResource("4_5fhm7")
 }],
 "loop": true,
-"name": &"default",
-"speed": 10.0
+"name": &"flap",
+"speed": 8.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8ebiv"]
-radius = 8.0
+radius = 6.0
 height = 26.0
 
 [node name="Bird" type="CharacterBody2D" groups=["birb"]]
@@ -37,12 +34,13 @@ script = ExtResource("1_0fvuy")
 
 [node name="flapSp" type="AnimatedSprite2D" parent="."]
 texture_filter = 3
+position = Vector2(0, 4)
 sprite_frames = SubResource("2")
-autoplay = "default"
-frame_progress = 0.755407
+animation = &"flap"
+autoplay = "flap"
+frame_progress = 0.641507
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 1)
 rotation = 1.57079
 shape = SubResource("CapsuleShape2D_8ebiv")
 

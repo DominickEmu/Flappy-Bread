@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Main/Highscore.gd" id="1_q1puq"]
 [ext_resource type="PackedScene" uid="uid://dmppqg8xsqlqn" path="res://Background/bg.tscn" id="1_ybsgs"]
-[ext_resource type="Texture2D" uid="uid://bq4u27fu2jjv" path="res://sprites/message.png" id="2_gl3n4"]
+[ext_resource type="Texture2D" uid="uid://cvifvyr46ktu3" path="res://sprites/message.png" id="2_gl3n4"]
 [ext_resource type="Script" path="res://Background/ground.gd" id="2_vsf0i"]
 [ext_resource type="Texture2D" uid="uid://dpnadh52jn7bc" path="res://sprites/base.png" id="3_xrvic"]
 [ext_resource type="Script" path="res://groundColl.gd" id="4_v14vg"]

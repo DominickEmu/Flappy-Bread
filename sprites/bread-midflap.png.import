@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dadyfn36jug1v"
-path="res://.godot/imported/bluebird-midflap.png-07aa2e671cc282f84600c0497db68d7b.ctex"
+uid="uid://chkrqy0paqi4s"
+path="res://.godot/imported/bread-midflap.png-17cbd435c52dbfb2ea030144b5c9b574.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/bluebird-midflap.png"
-dest_files=["res://.godot/imported/bluebird-midflap.png-07aa2e671cc282f84600c0497db68d7b.ctex"]
+source_file="res://sprites/bread-midflap.png"
+dest_files=["res://.godot/imported/bread-midflap.png-17cbd435c52dbfb2ea030144b5c9b574.ctex"]
 
 [params]
 

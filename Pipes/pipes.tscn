@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://71hedqt0052t"]
 
-[ext_resource type="Texture2D" uid="uid://dyeodci4f0608" path="res://sprites/pipe-green.png" id="1"]
 [ext_resource type="Script" path="res://Pipes/pipes.gd" id="1_64f3q"]
+[ext_resource type="Texture2D" uid="uid://hlmo3b3ecnp3" path="res://sprites/pipe-green.png" id="2_4l3l6"]
 [ext_resource type="AudioStream" uid="uid://cyw0xw1hx7vip" path="res://audio/point.wav" id="3_r1be4"]
 
 [sub_resource type="RectangleShape2D" id="1"]
@@ -17,37 +17,37 @@ size = Vector2(12, 67)
 position = Vector2(0, -30)
 script = ExtResource("1_64f3q")
 
-[node name="botSp" type="Sprite2D" parent="."]
+[node name="BottomPipe" type="Sprite2D" parent="."]
 texture_filter = 3
 position = Vector2(24, 537)
-texture = ExtResource("1")
+texture = ExtResource("2_4l3l6")
 
-[node name="topSp" type="Sprite2D" parent="."]
+[node name="TopPipe" type="Sprite2D" parent="."]
 texture_filter = 3
 position = Vector2(25.0004, 131)
 rotation = -3.14159
-texture = ExtResource("1")
+texture = ExtResource("2_4l3l6")
 
-[node name="collision" type="Area2D" parent="."]
+[node name="CollisionArea" type="Area2D" parent="."]
 
-[node name="collideTop" type="CollisionShape2D" parent="collision"]
+[node name="TopArea" type="CollisionShape2D" parent="CollisionArea"]
 position = Vector2(24.5004, 130)
 shape = SubResource("1")
 
-[node name="collideBot" type="CollisionShape2D" parent="collision"]
+[node name="BottomArea" type="CollisionShape2D" parent="CollisionArea"]
 position = Vector2(24, 537)
 shape = SubResource("2")
 
-[node name="score" type="Area2D" parent="."]
+[node name="ScoreArea" type="Area2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="score"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ScoreArea"]
 position = Vector2(42, 334.5)
 shape = SubResource("RectangleShape2D_222c3")
 debug_color = Color(0.678431, 0.505882, 0, 0.419608)
 
-[node name="pointSfx" type="AudioStreamPlayer" parent="."]
+[node name="PointSound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_r1be4")
 volume_db = -16.013
 
-[connection signal="body_entered" from="collision" to="." method="_on_collision_body_entered"]
-[connection signal="body_entered" from="score" to="." method="_on_score_body_entered"]
+[connection signal="body_entered" from="CollisionArea" to="." method="_on_collision_body_entered"]
+[connection signal="body_entered" from="ScoreArea" to="." method="_on_score_body_entered"]

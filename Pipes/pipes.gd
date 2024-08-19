@@ -4,8 +4,8 @@ extends Node2D
 @onready var birb = get_tree().get_first_node_in_group("birb");
 @onready var points_gui = get_tree().get_first_node_in_group("points_gui");
 
-@onready var sprite = $botSp;
-@onready var point_sfx = $pointSfx;
+@onready var sprite = $BottomPipe;
+@onready var point_sfx = $PointSound;
 
 var velocity : Vector2;
 
